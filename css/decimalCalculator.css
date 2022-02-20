@@ -1,0 +1,70 @@
+body{
+    width : 100%;
+    background-color: #333333;
+    justify-content: center;
+}
+
+#container{
+    margin-top: 350px;
+    margin-left: 450px;
+    width: 50%;
+    height: 100px;
+}
+
+#res{
+    background-color : black;
+    color: white;
+    border : solid;
+    height : 48px;
+    font-size : 20px;
+}
+
+button{
+    width : 25%;
+    height : 36%;
+    font-size : 18px;
+    margin : 0px;
+    float : left;
+    color: aliceblue;
+    background-color: black;
+}
+#btns{
+    display: flex;
+    flex-direction: column;
+}
+#btnDel{
+   width: 50%;
+}
+
+#btnSum{
+    width: 100%;
+ }
+#btns-fourthRow{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+ }
+ #btns-fouthRealRow{
+    width: 100%;
+ }
+
+ #btns-fouthRealRow button{
+    width: 33.33%;
+ }
+
+ #btns-fithRow button{
+    width: 33.33%;
+ }
+
+ #last-row{
+     display: flex;
+     width: 100%;
+ }
+
+ #plus{
+     width: 25%;
+     height: 16vh;
+ }
+ 
+
+ 

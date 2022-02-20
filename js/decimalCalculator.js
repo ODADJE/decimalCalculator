@@ -60,5 +60,6 @@ equal.onclick = function(){
     expression = first+operator+second; */
     expression = eval(expression);
     document.getElementById("res").innerHTML =  expression;
+    expression = expression.toString();
     return expression;
 };

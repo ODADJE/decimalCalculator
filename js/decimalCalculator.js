@@ -1,17 +1,7 @@
-let first="";
-let re = /[0-1](\+|\-|\*|\/)/;
-let second=""
 let expression="";
+
 function operation (e){
     var btn = e.target.value;
-
-   /*  if(re.test(first)){
-        second = second + btn;
-    }
-    else
-        {
-            first = first +  btn;
-        } */
     expression = expression + btn;
     document.getElementById("res").innerHTML = expression;
 };
@@ -32,32 +22,23 @@ document.getElementById("btnDiv").addEventListener('click',operation);
 document.getElementById("btnMul").addEventListener('click',operation);
 document.getElementById("btnPoint").addEventListener('click',operation);
 
-let del = document.getElementById("btnDel");
+const del = document.getElementById("btnDel");
 del.onclick = function(){
-    /* first ="";
-    second=""; */
     expression = "";
      document.getElementById("res").innerHTML = expression;
      return expression;
 };
 
-let clear = document.getElementById("btnClr");
+const clear = document.getElementById("btnClr");
 clear.onclick = function(){
-    /* first ="";
-    second=""; */
     expression = expression.slice(0, -1);;
      document.getElementById("res").innerHTML = expression;
      return expression;
      
 };
 
-let equal = document.getElementById('btnEql');
+const equal = document.getElementById('btnEql');
 equal.onclick = function(){
-    /* let operator = first[first.length-1];
-    first = first.substring(0, (first.length - 1));
-    first = parseInt(first,2).toString();
-    second = parseInt(second,2).toString();
-    expression = first+operator+second; */
     expression = eval(expression);
     document.getElementById("res").innerHTML =  expression;
     expression = expression.toString();

@@ -1,0 +1,61 @@
+body {
+  font-family: "agency FB", "Algerian", " Times New Roman";
+  background-color: #333333;
+}
+
+h1 {
+  text-align: center;
+  width: 400px;
+  color: yellow;
+  text-transform: uppercase;
+  font-weight: normale;
+  font-size: xx-large;
+  margin: auto;
+  padding: auto;
+  border-bottom: 5px double green;
+}
+.calculatrice {
+  background-color: #d9e4f1;
+  border-color: #333333;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  margin-top: 50px;
+  border-spacing: 5px;
+  border: 8px double grey;
+}
+button {
+  width: 85px;
+  height: 60px;
+  background-color: #012;
+  color: white;
+  font-weight: bold;
+  font-size: xx-large;
+  font-family: "agency FB", "Algerian", " Times New Roman";
+}
+#ecran {
+  height: 60px;
+  width: 360px;
+  text-align: right;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #012;
+  font-size: xx-large;
+  border: 5px double grey;
+}
+#btnDel {
+  width: 178px;
+}
+#btnSum {
+  height: 120px;
+}
+button:hover {
+  background-color: #303f4c;
+}
+button:active {
+  background-color: #0f0;
+}

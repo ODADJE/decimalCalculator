@@ -3,7 +3,7 @@ let expression="";
 function operation (e){
     var btn = e.target.value;
     expression = expression + btn;
-    document.getElementById("res").innerHTML = expression;
+    document.getElementById("ecran").innerHTML = expression;
 };
 
 document.getElementById("btn0").addEventListener('click',operation);
@@ -24,15 +24,20 @@ document.getElementById("btnPoint").addEventListener('click',operation);
 
 const del = document.getElementById("btnDel");
 del.onclick = function(){
-    expression = "";
-     document.getElementById("res").innerHTML = expression;
+    expression = "0";
+     document.getElementById("ecran").innerHTML = expression;
+     expression = "";
      return expression;
 };
 
 const clear = document.getElementById("btnClr");
 clear.onclick = function(){
-    expression = expression.slice(0, -1);;
-     document.getElementById("res").innerHTML = expression;
+    expression = expression.slice(0, -1);
+    if (expression.length == 0)
+        expression = "0";
+     document.getElementById("ecran").innerHTML = expression;
+     if (expression == "0")
+     expression = "";
      return expression;
      
 };
@@ -40,7 +45,7 @@ clear.onclick = function(){
 const equal = document.getElementById('btnEql');
 equal.onclick = function(){
     expression = eval(expression);
-    document.getElementById("res").innerHTML =  expression;
+    document.getElementById("ecran").innerHTML =  expression;
     expression = expression.toString();
     return expression;
 };
